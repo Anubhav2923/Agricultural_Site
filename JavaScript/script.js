@@ -17,3 +17,11 @@ setInterval(showSlides, 3000);
 
 // Run showSlides() once on page load to start the slideshow
 showSlides();
+async function getData(){
+    const url = 'https://api.weatherapi.com/v1/current.json?key=2e2a9ba24b4f41a6bf3181404230809&q=india&aqi=no';
+   
+   
+    const data = fetch()
+}; 
+getData();
+// apiKey = 2e2a9ba24b4f41a6bf3181404230809

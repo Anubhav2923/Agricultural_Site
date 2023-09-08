@@ -12,15 +12,15 @@
 <body>
 
     <!-- NavBar Section -->
-    <nav class="navbar flex container">
+    <nav class="navbar flex container" >
         <div class="left-nav flex">
             <img src="Assests/logo.jpg" alt="logo">
             <ul class="list-items flex">
-                <li>Home</li>
-                <li>News</li>
-                <li>Gallary</li>
-                <li>Contact Us</li>
-                <li>Privay Policy</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#gallary">Gallary</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="">Privay Policy</a></li>
             </ul>
         </div>
         <div class="right-nav ">
@@ -29,7 +29,7 @@
     </nav>
 
     <!-- Hero Section-->
-    <div class="slideshow-container   ">
+    <div class="slideshow-container   " id="home">
         <div class="slide">
             <img src="Assests/slider1.jpg" alt="Image 1">
             <div class="text-container">
@@ -63,7 +63,7 @@
 
     <!--Contact Us Section-->
     
-    <div class="contactus container ">
+    <div class="contactus container  " id="contactus">
         <h1 class="cont-us">Contact Us</h1>
        <div class="flex">
         <div class="left-sec">
@@ -127,8 +127,8 @@
     </div>
 
     <!--NEws Section-->
-    <div class="news-section container ">
-        <h1 class="cont-us">News Section</h1>
+    <div class="news-section container " id="news">
+        <h1 class="news-sec">News Section</h1>
         <div class="news-1 flex">
             <div class="img-sec">
                 <img src="Assests/news-1.jpg" alt="">
@@ -148,14 +148,14 @@
                     optio similique labore asperiores.</p>
             </div>
             <div class="img-sec">
-                <img src="Assests/news-1.jpg" alt="">
+                <img src="Assests/news-2.jpg" alt="">
             </div>
 
 
         </div>
         <div class="news-1 flex">
             <div class="img-sec">
-                <img src="Assests/news-1.jpg" alt="">
+                <img src="Assests/news-3.jpg" alt="">
             </div>
             <div class="content-sec">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam corrupti ea omnis? Doloribus
@@ -181,6 +181,32 @@
 
     </div>
 
+    <div class="gallary-sec container" id="gallary">
+        <h1 class="news-sec">Gallary </h1>
+        <div class="gallary-box flex">
+            <img src="Assests/gallary-1.jpeg" alt="">
+            <img src="Assests/gallary-2.jpg" alt="">
+            <img src="Assests/gallary-3.jpeg" alt="">
+           
+        </div>
+        <div class="gallary-box flex">
+            <img src="Assests/gallary-4.webp" alt="">
+            <img src="Assests/gallary-5.jpg" alt="">
+            <img src="Assests/gallary-6.jpg" alt="">
+           
+        </div>
+        
+        <div class="gallary-box flex">
+            <img src="Assests/gallary-7.jpeg" alt="">
+            <img src="Assests/gallary-8.jpeg" alt="">
+            <img src="Assests/gallary-9.avif" alt="">
+           
+        </div>
+        
+        <div class="gallary-box flex">
+            <img src="Assests/gallary-10.webp" alt="">           
+        </div>
+    </div>
 
     <!-- Script Section-->
     <script src="JavaScript/script.js"></script>

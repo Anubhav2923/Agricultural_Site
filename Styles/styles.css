@@ -22,7 +22,12 @@
     display: flex;
     
 }
-
+a{
+    color: white;
+}
+a:hover{
+    color: blue;
+}
 
 /* navbar Section*/
 .navbar{
@@ -139,11 +144,19 @@ input{
 }
 .cont-us{
     padding-inline: 100px;
-    margin-top: 50px;
+    margin-bottom :20px;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-family: 'Ysabeau SC', sans-serif;
     
+}
+.news-sec{
+    font-size: 40px;
+    padding-inline: 100px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
 }
 .btn{
     font-size: 17px;
@@ -191,7 +204,6 @@ textarea{
     height: 200px;
     margin-right: 50px;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 .content-sec{
     margin-left: 50px;
@@ -201,3 +213,33 @@ textarea{
 .news-section{
     background-color: #E2E8CE;
 }
+.news-1{
+    height: 200px;
+    margin-top: 30px;
+    background: rgba(245, 243, 243, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(12, 19, 106, 0.67);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba(27, 23, 23, 0.18);
+    text-align: start
+}
+
+.gallary-sec{
+    background-color: #262626;
+    color: white;
+    min-height: 100vh;
+    margin-top: 4px;
+    justify-content: center;
+    align-items:center;
+}
+.gallary-box img{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* Media quereis for width <= 1024*/
+
+
