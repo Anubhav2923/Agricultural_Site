@@ -17,10 +17,11 @@
             <img src="Assests/logo.jpg" alt="logo">
             <ul class="list-items flex">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#gallary">Gallary</a></li>
-                <li><a href="#contactus">Contact Us</a></li>
-                <li><a href="">Privay Policy</a></li>
+                
             </ul>
         </div>
         <div class="right-nav ">
@@ -61,6 +62,26 @@
         <!-- Add more slides here -->
     </div>
 
+     <!-- weather API Section-->
+     <div class="app-wrap" id="weather">
+		<header>
+			<input type="text" autocomplete="off" class="search-box" placeholder="Search for a city">
+		</header>
+
+		<main>
+			<section class="location">
+				<div class="city">Durg, Chhattisgarh</div>
+				<div class="date">Friday 2 June</div>
+			</section>
+
+			<div class="current">
+				<div class="temp">38<span>°C</span></div>
+				<div class="weather">Sunny</div>
+				<div class="hi-low">13°C / 16°C</div>
+			</div>
+		</main>
+	</div>
+
     <!--Contact Us Section-->
     
     <div class="contactus container  " id="contactus">
@@ -68,18 +89,18 @@
        <div class="flex">
         <div class="left-sec">
 
-            <form action="#">
+            <form action="mailto:anubhavsinghas9@gmail.com" id="myform">
                 <label for="name">Name.</label>
                 <br>
-                <input type=" text" placeholder="Enter Your Name">
+                <input type=" text" placeholder="Enter Your Name" required id="name" name="name">
                 <br>
                 <label for="mobile">Mobile No.</label>
                 <br>
-                <input type="number" placeholder="Enter phone Number">
+                <input type="number" id="mobile" name="mobile" placeholder="Enter phone Number" required>
                 <br>
                 <label for="email">Email</label>
                 <br>
-                <input type="email" placeholder="Enter Email">
+                <input type="email" placeholder="Enter Email" id="email" name="email" required>
                 <label for="Message">
                     Message
                 </label>
@@ -101,7 +122,7 @@
                 </div>
                 <div class="content">
                     <h3>Contact Info </h3>
-                    <p>+91 2321124212</p>
+                    <p>+91 9893936367</p>
                 </div>
             </div>
             <div class="contactInfo flex">
@@ -110,10 +131,10 @@
                 </div>
                 <div class="content">
                     <h3>Email </h3>
-                    <p>info@techhero.com</p>
+                    <p><a href="mailto:anubhavsinghas9@gmail.com">anubhavsinghas9@gmail.com </a></p>
                 </div>
             </div>
-            <div class="contactInfo flex">
+            <div class="contactInfo flex" id="open-map-button">
                 <div class="photo">
                     <i class="fa-solid fa-location-dot fa-xl"></i>
                 </div>
@@ -134,18 +155,17 @@
                 <img src="Assests/news-1.jpg" alt="">
             </div>
             <div class="content-sec">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam corrupti ea omnis? Doloribus
-                    quis animi nobis error illum, atque reprehenderit possimus molestiae provident beatae, voluptas
-                    optio similique labore asperiores.</p>
+                <p>
+                    👉त्यामुळे कपाशी पिकाचे शेंडे खुडणे करण्यापेक्षा जर आपण L आकार सुतळीने बांधले तर तीन ते चार पटीने उत्पादन आपले वाढू 🌅👈शकते
+                    कपाशी पिकाचा शेंडा  खुडनी केल्यानंतर  कपाशीचे झाड सरळ न वाढता साईडला फळफांद्या घेऊन अधिक वाढते आणि अनेक शेतकरी त्याच कपाशीच्या प्लॉटमध्ये शेंडे खुडणी करतात जिथे अंतर कमी आहे एक तर पहिलेच अंतर कमी आणि त्यानंतर शेंडे  खुडनी केल्यानंतर प्लॉट उभा न वाढता पट्ट्यामध्ये अधिक प्रमाणात वाढतो..
+                </p>
             </div>
 
         </div>
         <div class="news-1 flex">
             
             <div class="content-sec">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam corrupti ea omnis? Doloribus
-                    quis animi nobis error illum, atque reprehenderit possimus molestiae provident beatae, voluptas
-                    optio similique labore asperiores.</p>
+                <p>फवारणी मध्ये युरिया घेत असताना वेगवेगळ्या प्रकारचा गैरसमज शेतकऱ्यांमध्ये पसरवल्या जातत काही शेती तज्ञ म्हणतात युरिया घेतल्यामुळे कपाशीचे पान जळतात करपतात  किंवा काही तज्ञ म्हणतात युरियामुळे फवारणी मध्ये घेतल्या पिकाची वाढ अधिक प्रमाणात होते तर शेतकरी ची माहिती सर्व चुकीची आहे </p>
             </div>
             <div class="img-sec">
                 <img src="Assests/news-2.jpg" alt="">
@@ -158,9 +178,9 @@
                 <img src="Assests/news-3.jpg" alt="">
             </div>
             <div class="content-sec">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam corrupti ea omnis? Doloribus
-                    quis animi nobis error illum, atque reprehenderit possimus molestiae provident beatae, voluptas
-                    optio similique labore asperiores.</p>
+                <p>
+                    त्यामुळे पट्ट्यामध्ये खाल पर्यंत सूर्यप्रकाश हा मिळत नाही त्यामुळे कपाशीच्या प्लॉटमध्ये पातेगळ पान पिवळे लाल होणे बोंड सड या रोगाचा अधिक प्रादुर्भाव आढळून येतो बोंडाची संख्या ही वरच आपल्याला लागलेली बघायला मिळते म्हणजेच बुडा पासून वरती बोंड सारख्या प्रमाणात  लागलेले बघायला मिळत नाही 
+                </p>
             </div>
 
 
@@ -168,12 +188,12 @@
         <div class="news-1 flex">
             
             <div class="content-sec">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam corrupti ea omnis? Doloribus
-                    quis animi nobis error illum, atque reprehenderit possimus molestiae provident beatae, voluptas
-                    optio similique labore asperiores.</p>
+                <p>
+                    फवारणी मध्ये युरिया घेत असताना वेगवेगळ्या प्रकारचा गैरसमज शेतकऱ्यांमध्ये पसरवल्या जातत काही शेती तज्ञ म्हणतात युरिया घेतल्यामुळे कपाशीचे पान जळतात करपतात किंवा काही तज्ञ म्हणतात युरियामुळे फवारणी मध्ये घेतल्या पिकाची वाढ अधिक प्रमाणात होते तर शेतकरी ची माहिती सर्व चुकीची आहे
+                </p>
             </div>
             <div class="img-sec">
-                <img src="Assests/news-1.jpg" alt="">
+                <img src="Assests/news-4.jpg" alt="">
             </div>
 
 
@@ -207,6 +227,36 @@
             <img src="Assests/gallary-10.webp" alt="">           
         </div>
     </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-sec">
+        <div class="flex footer-section">
+            <div class="pages">
+                <h2>Pages</h2>
+                <ul>
+                    <li>News</li>
+                    <li>Gallary</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="terms-section">
+                <h2>Terms & Privacy Policy </h2>
+                <ul>
+                    <li>Terms & Condition</li>
+                    <li> Privacy Privacy</li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p> +91 9893936368</p>
+                <h3>anubhavsinghas9@gmail.com</h3>
+            </div>
+        </div>
+
+
+    </footer>
+   
 
     <!-- Script Section-->
     <script src="JavaScript/script.js"></script>
